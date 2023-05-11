@@ -1,0 +1,133 @@
+#news {
+    margin-top: 80px;
+    background: #FAFAFA;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.news {
+    &__title {
+        text-align: center;
+        font-family: 'NEXT ART';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 120%;
+        color: #0F0100;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: #ffffff;
+
+        &-header {
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            justify-content: space-between;
+            padding: 30px 30px 40px 30px;
+            height: 100%;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            &-title {
+                font-family: 'NEXT ART';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 140%;
+                color: #0F0100;
+
+                @media (max-width: 410px) {
+                    text-align: center;
+                }
+            }
+
+            &-text {
+                font-family: 'PT Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 150%;
+                color: #0F0100;
+
+                @media (max-width: 410px) {
+                    text-align: center;
+                }
+            }
+        }
+
+        &-link {
+            @media (max-width: 410px) {
+                text-align: center;
+            }
+
+            a {
+                font-family: 'PT Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 140%;
+                color: #6C160F;
+                transition: all .15s ease;
+
+                &:hover {
+                    color: #E51C3A;
+                }
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-link {
+            padding: 16px 20px 14px;
+            filter: drop-shadow(6px 6px 40px rgba(229, 28, 58, 0.2));
+            border: 2px solid #BD172E;
+
+            font-family: 'NEXT ART';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            background: linear-gradient(93.23deg, #BD172E 0%, #E51C3A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            //color: #BD172E;
+            transition: all 0.15s ease;
+
+            &:hover {
+                background: linear-gradient(93.23deg, #E51C3A 0%, #BD172E 100%);
+                color: #ffffff;
+                text-fill-color: unset;
+                background-clip: unset;
+                -webkit-background-clip: unset;
+                -webkit-text-fill-color: unset;
+            }
+        }
+    }
+}
+
+.newsSwiper {
+    margin-top: 50px;
+}
+

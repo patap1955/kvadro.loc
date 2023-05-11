@@ -1,0 +1,123 @@
+#newsItem {
+    margin-top: 20px;
+    position: relative;
+    z-index: 3;
+    background: #FAFAFA;
+    padding: 80px 0;
+}
+
+.news-item {
+    &-title {
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: 'NEXT ART';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 140%;
+        color: #0F0100;
+
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 150%;
+        color: #0F0100;
+    }
+
+    h2,h3,h4,h5,h6 {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        font-family: 'NEXT ART';
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 36px;
+        @media (max-width: 768px) {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    h3 {
+        font-size: 28px;
+        @media (max-width: 768px) {
+            font-size: 26px;
+            text-align: center;
+        }
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    img {
+        @media (max-width: 992px) {
+            //float: unset !important;
+            margin: 20px auto !important;
+            width: 100% !important;
+            height: 500px !important;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            height: 400px !important;
+        }
+
+        @media (max-width: 620px) {
+            height: 350px !important;
+        }
+
+        @media (max-width: 620px) {
+            height: 300px !important;
+        }
+    }
+
+    a {
+        font-family: 'PT Sans';
+        font-style: normal;
+        line-height: 140%;
+        font-weight: 700;
+        color: #6C160F;
+        transition: all .15s ease;
+
+        &:hover {
+            color: #E51C3A;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-bottom: 20px;
+
+        li {
+            background: url(/assets/img/bulit.svg) no-repeat 0 6px;
+            padding-left: 26px;
+            font-family: 'PT Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 150%;
+            color: #0F0100;
+        }
+    }
+}

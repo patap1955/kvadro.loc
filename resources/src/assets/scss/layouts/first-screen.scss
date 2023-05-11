@@ -1,0 +1,132 @@
+#first-screen {
+    position: relative;
+    margin-top: 20px;
+
+    @media (max-width: 1023px) {
+        margin-top: 70px;
+    }
+}
+
+.first-screen {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding-bottom: 30px;
+
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    &__info {
+        width: 706px;
+
+        @media (max-width: 1256px) {
+            width: 470px;
+        }
+
+        @media (max-width: 1023px) {
+            width: 100%;
+            text-align: center;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 120%;
+            color: #0F0100;
+
+            @media (max-width: 725px) {
+                font-size: 36px;
+            }
+
+            @media (max-width: 606px) {
+                font-size: 30px;
+            }
+
+            @media (max-width: 359px) {
+                font-size: 24px;
+            }
+        }
+
+        &-text {
+            width: 550px;
+            margin-top: 30px;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 150%;
+            color: #0F0100;
+
+            @media (max-width: 1023px) {
+                margin: 30px auto;
+            }
+
+            @media (max-width: 590px) {
+                width: 100%;
+            }
+        }
+
+        &-button {
+            margin-top: 40px;
+
+            button {
+                padding: 16px 20px 14px;
+                background: linear-gradient(93.23deg, #BD172E 0%, #E51C3A 100%);
+                box-shadow: 6px 6px 40px rgba(229, 28, 58, 0.2);
+                font-family: 'NEXT ART';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 140%;
+                color: #FFFFFF;
+                transition: all 0.15s ease;
+
+                &:hover {
+                    background: linear-gradient(93.23deg, #E51C3A 0%, #BD172E 100%);
+                }
+            }
+        }
+    }
+
+    &__slide {
+        position: relative;
+        width: 500px;
+        height: 590px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        @media (max-width: 540px) {
+            width: 100%;
+            height: 50vh;
+        }
+    }
+
+    &__mask {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.firstScreenSwiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
